@@ -4,6 +4,12 @@ class Ray{
         this.dir = p5.Vector.fromAngle(angle);
     }
 
+
+
+    setAngle(a) {
+        this.dir = p5.Vector.fromAngle(a);
+    }
+
     //function to set the direction of the ray
     lookAt(x, y){
         this.dir.x = x - this.pos.x;
